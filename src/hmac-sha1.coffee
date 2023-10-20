@@ -69,7 +69,7 @@ class HMAC_SHA1
       protocol = (encrypted and 'https') or 'http'
     
     parsedUrl  = url.parse originalUrl, true
-    hitUrl     = protocol + '://' + req.headers.host + parsedUrl.pathname
+    hitUrl     = protocol + '://' + req.hostname + parsedUrl.pathname
 
     @build_signature_raw hitUrl, parsedUrl, req.method, body, consumer_secret, token
 
