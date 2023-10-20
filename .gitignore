@@ -12,7 +12,7 @@ logs
 results
 
 node_modules
-lib
+
 coverage
 
 ims-lti*.tgz
